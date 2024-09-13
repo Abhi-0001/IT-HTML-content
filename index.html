@@ -10,16 +10,57 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <style>
+      p,
+      aside {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+
+      /* id & classes  */
+
+      .para-1,
+      .para-3,
+      #author-name {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .btn {
+        color: #fff;
+        background-color: aqua;
+        border: none;
+        border-radius: 5px;
+
+        width: 92px;
+        height: 24px;
+      }
+
+      .btn-red {
+        background-color: red;
+      }
+      .btn-blue {
+        background-color: blue;
+      }
+      .btn-black {
+        background-color: black;
+      }
+      .btn-grey {
+        background-color: grey;
+      }
+    </style>
   </head>
 
   <body>
     <font face="Verdana">
       <center>
-        <h1>Brave new World</h1>
-        <p>by</p>
+        <h1 style="font-size: 20px">Brave new World</h1>
 
-        <p>Aldous Huxley</p>
-        <p>(1894-1963)</p>
+        <p class="para-1">by</p>
+
+        <p id="author-name">Aldous Huxley</p>
+        <p class="para-3">(1894-1963)</p>
       </center>
 
       <hr width="650px" />
@@ -88,10 +129,18 @@
       <br />
 
       <center>
-        <button><ion-icon name="logo-facebook"></ion-icon> share</button>
-        <button><ion-icon name="logo-twitter"></ion-icon> tweet</button>
-        <button><ion-icon name="logo-pinterest"></ion-icon> Pin</button>
-        <button><ion-icon name="mail-outline"></ion-icon> email</button>
+        <button class="btn btn-blue">
+          <ion-icon name="logo-facebook"></ion-icon> share
+        </button>
+        <button class="btn btn-black">
+          <ion-icon name="logo-twitter"></ion-icon> tweet
+        </button>
+        <button class="btn btn-red">
+          <ion-icon name="logo-pinterest"></ion-icon> Pin
+        </button>
+        <button class="btn btn-grey">
+          <ion-icon name="mail-outline"></ion-icon> email
+        </button>
       </center>
 
       <br />
